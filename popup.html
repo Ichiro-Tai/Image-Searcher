@@ -6,12 +6,14 @@
   <meta charset="utf-8">
 
   <script src="popup.js"></script>
-  <script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <h1>Text Highlighter</h1>
-  <input type="text" id="keyword" />
-  <button type="button" id="highlight_button">Highlight!</button>
+  <form id="highlight_form">
+    <input type="text" id="keyword" />
+    <!-- TODO: connect textbox and button with pressing enter -->
+    <button type="submit">Highlight!</button>
+  </form>
   <ul id="keyword_list"></ul>
 </body>
 </html>
