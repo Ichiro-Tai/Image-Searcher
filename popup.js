@@ -93,6 +93,9 @@ function saveTextColor(tab, texts) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  let textbox = document.getElementById("keyword");
+  textbox.focus();
+  textbox.select();
   getCurrentTab(function(tab) {
     getChangedTexts(tab, function(tabs) {
       let keywords = tabs[tab] || [];
